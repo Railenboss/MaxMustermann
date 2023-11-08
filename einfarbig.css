@@ -24,7 +24,7 @@ body {
 
 .card {
   position: relative;
-  max-width: 300px
+  max-width: 300px;
   width: 75%;
   padding: 20px;
   margin: 0 auto;
