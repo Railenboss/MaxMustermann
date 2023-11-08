@@ -1,21 +1,33 @@
 document.addEventListener('DOMContentLoaded', (event) => {
+  const body = document.body;
   const themeToggleDark = document.getElementById('theme-toggle-dark');
   const themeToggleLight = document.getElementById('theme-toggle-light');
-  const body = document.body; // Verweis auf den Body für das Anwenden der Klassen
 
-  // Dunkles Theme aktivieren
-  themeToggleDark.addEventListener('click', () => {
+  // Funktion, um den Dark Mode zu aktivieren
+  function enableDarkMode() {
     body.classList.add('dark-mode');
     body.classList.remove('light-mode');
-    themeToggleDark.style.display = 'none';
     themeToggleLight.style.display = 'block';
-  });
+    themeToggleDark.style.display = 'none';
+    localStorage.setItem('darkMode', 'enabled');
+  }
 
-  // Helles Theme aktivieren
-  themeToggleLight.addEventListener('click', () => {
-    body.classList.add('light-mode');
+  // Funktion, um den Light Mode zu aktivieren
+  function disableDarkMode() {
     body.classList.remove('dark-mode');
-    themeToggleLight.style.display = 'none';
+    body.classList.add('light-mode');
     themeToggleDark.style.display = 'block';
-  });
+    themeToggleLight.style.display = 'none';
+    localStorage.setItem('darkMode', 'disabled');
+  }
+
+  // Überprüfen des Zustands beim Laden der Seite
+  if (localStorage.getItem('darkMode') === 'enabled') {
+    enableDarkMode();
+  } else {
+    enableDarkMode();
+  }
+
+  themeToggleDark.addEventListener('click', enableDarkMode);
+  themeToggleLight.addEventListener('click', disableDarkMode);
 });
