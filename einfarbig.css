@@ -109,12 +109,7 @@ a:hover {
   transform: rotate(90deg);
 }
 
-@media (max-width: 600px) {
-  .card {
-    width: 100%;
-    padding: 10px;
-  }
-}
+
 
 /* CSS für das Profilbild */
 .profilbild {
