@@ -20,6 +20,8 @@ body {
 .dark-mode {
   background-color: #333333;
   color: #ffffff; /* Stellen Sie sicher, dass diese Regel für die Schriftfarbe gilt */
+  box-shadow: 0 0 15px #ffffff; /* Weißer Schatten */
+
 }
 
 .card {
