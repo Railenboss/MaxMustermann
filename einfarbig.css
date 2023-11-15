@@ -42,7 +42,6 @@ body {
 
 @media (max-width: 768px) {
   .card {
-    padding: 10px; /* Kleinerer Abstand, um mehr Raum zu sparen */
     max-width: 75%; /* Ermöglicht der Karte, sich fast die gesamte Breite auszudehnen */
   }
 }
