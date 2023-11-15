@@ -42,7 +42,7 @@ body {
 
 @media (max-width: 768px) {
   .card {
-    max-width: 75%; /* Ermöglicht der Karte, sich fast die gesamte Breite auszudehnen */
+    max-width: 80%; /* Ermöglicht der Karte, sich fast die gesamte Breite auszudehnen */
   }
 }
 
