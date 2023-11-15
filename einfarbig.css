@@ -42,7 +42,17 @@ body {
 
 @media (max-width: 768px) {
   .card {
-    max-width: 80%; /* Ermöglicht der Karte, sich fast die gesamte Breite auszudehnen */
+  max-width: 80%; /* Ermöglicht der Karte, sich fast die gesamte Breite auszudehnen */
+  position: relative;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  background-color: inherit; /* Erbt die Hintergrundfarbe vom Elternelement */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   }
 }
 
