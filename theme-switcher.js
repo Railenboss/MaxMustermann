@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   if (localStorage.getItem('darkMode') === 'enabled') {
     enableDarkMode();
   } else {
-    enableDarkMode();
+    disableDarkMode();
   }
 
   themeToggleDark.addEventListener('click', enableDarkMode);
