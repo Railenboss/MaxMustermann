@@ -1,3 +1,4 @@
+
 /* einfarbig.css */
 body {
   font-family: 'Arial', sans-serif;
@@ -9,8 +10,6 @@ body {
   margin: 0;
   padding: 0;
   transition: background-color 0.5s, color 0.5s;
-
-
   
 }
 
@@ -31,7 +30,7 @@ body {
   position: relative;
   max-width: 300px;
   width: 100%;
-  padding: 20px;
+  padding: 15px;
   border-radius: 8px;
   box-shadow: inherit;
   transition: box-shadow 0.3s ease;
@@ -54,8 +53,8 @@ body {
   cursor: pointer;
   font-size: 24px;
   position: absolute;
-  top: 20px;
   right: 20px;
+  top: 20px;
   transition: transform 0.3s ease;
 }
 
@@ -75,12 +74,9 @@ h1 {
 
 p {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
+  font-weight: 7000;
 }
-a:hover {
-  color: #3498db;
-  text-decoration: underline;
-}
+
 
 .card:hover {
   transform: scale(1.03);
@@ -93,12 +89,12 @@ a:hover {
 
 .social-links a {
   margin: 0 10px; /* Abstand zwischen den Icons */
-  color: #333; /* Standardfarbe der Icons */
+  color: #000000; /* Standardfarbe der Icons */
   font-size: 24px; /* Größe der Icons */
 }
 
 .social-links a:hover {
-  color: #3498db; /* Farbwechsel beim Hover */
+  font-size: 30px;
 }
 
 .dark-mode .social-links a {
@@ -106,7 +102,7 @@ a:hover {
 }
 
 .dark-mode .social-links a:hover {
-  color: #c7d5e0; /* heller Grauton für Hover-Effekt im Dark Mode */
+  color: #ffffff; /* heller Grauton für Hover-Effekt im Dark Mode */
 }
 
 .theme-toggle:hover {
@@ -116,7 +112,6 @@ a:hover {
 @media (max-width: 600px) {
   .card {
     width: 90%;
-    padding: 10px;
   }
 }
 
@@ -131,15 +126,18 @@ a:hover {
   margin-bottom: 20px; /* Abstand zum Text */
 }
 
-/* CSS für die .card im Dark Mode, um den Rand des Bildes anzupassen */
-.dark-mode .profilbild {
-  border-color: #333; /* dunkler Rand für den Dark Mode */
+.light-mode .profilbild {
+  border-color: #333333;
 }
 
-
+/* CSS für die .card im Dark Mode, um den Rand des Bildes anzupassen */
+.dark-mode .profilbild {
+  border-color: #ffffff; /* dunkler Rand für den Dark Mode */
+}
 
 
 .dark-mode .card{
   background-color: #333333;
 }
+
 
